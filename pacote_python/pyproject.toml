@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "carro-pendulo-duplo"
+version = "1.0.0"
+description = "Simulação e animação do sistema carrinho - mola inclinada - pêndulo duplo (modelo de Lagrange)"
+requires-python = ">=3.9"
+dependencies = ["numpy>=1.21", "scipy>=1.7", "matplotlib>=3.5", "pillow"]
+
+[project.optional-dependencies]
+teste = ["pytest"]
+
+[project.scripts]
+carro-pendulo = "carro_pendulo_duplo.__main__:main"
+
+[tool.setuptools]
+packages = ["carro_pendulo_duplo"]

@@ -1,0 +1,10 @@
+# ficam só locais
+*.md
+latex/
+app/pendulo_duplo_app.html
+
+# gerados
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
